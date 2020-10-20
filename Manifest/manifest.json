@@ -1,0 +1,43 @@
+{
+  "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.3/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.3",
+  "version": "1.0.0",
+  "id": "d55d08d9-bacb-4567-942f-afd85d632dcc",
+  "packageName": "com.microsoft.teams.icebreaker",
+  "developer": {
+    "name": "ANVA",
+    "websiteUrl": "https://anva.nl/",
+    "privacyUrl": "https://anva.nl/disclaimer-privacy-cookie-statement/",
+    "termsOfUseUrl": "https://anva.nl/algemenevoorwaarden/"
+  },
+  "icons": {
+    "color": "color.png",
+    "outline": "outline.png"
+  },
+  "name": {
+    "short": "ANVA Coffee time"
+  },
+  "description": {
+    "short": "ANVA Coffee time is een bot die wekelijks 2 willekeurige collega's aan elkaar koppelt voor een kop koffie.",
+    "full": "ANVA Coffee time is een bot die wekelijks 2 willekeurige collega's aan elkaar koppelt voor een kop koffie."
+  },
+  "accentColor": "#64A2CC",
+  "bots": [
+    {
+      "botId": "40f5737d-172e-4cd3-b273-ed08fe6e0b3a",
+      "scopes": [
+        "personal",
+        "team"
+      ],
+      "supportsFiles": false,
+      "isNotificationOnly": true
+    }
+  ],
+  "permissions": [
+    "identity",
+    "messageTeamMembers"
+  ],
+  "validDomains": [
+    "anva-coffee-time-4cozvj3si3o3y.azurewebsites.net"
+  ]
+}
