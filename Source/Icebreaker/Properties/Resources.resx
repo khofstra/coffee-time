@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="ChatWithMatchButtonText" xml:space="preserve">
-    <value>Drink een kop koffie met {0}</value>
+    <value>Chat met {0}</value>
     <comment>Button text to initiate a chat with the person the user has been matched up with</comment>
   </data>
   <data name="ErrorOccured" xml:space="preserve">
@@ -166,7 +166,7 @@
     <comment>The title text for the pairup notification adaptive card</comment>
   </data>
   <data name="MeetupContent" xml:space="preserve">
-    <value>Hey, we hebben een match! Je bent deze week gekoppelt met {0}. Drink samen een online bakje koffie wanneer je tijd hebt.</value>
+    <value>Hey, we hebben een match! Je bent deze week gekoppelt met {1}. Tijd voor ANVA Coffee Time! .</value>
     <comment>Content of the Meetup for the propose meeting</comment>
   </data>
   <data name="MeetupTitle" xml:space="preserve">
