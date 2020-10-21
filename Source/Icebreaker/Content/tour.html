@@ -1,12 +1,12 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
     <title>Tour</title>
     <script src="../lib/microsoft-teams/dist/MicrosoftTeams.min.js"></script>
     <script src="../lib/jquery/jquery.min.js"></script>
-    <link href="styles.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet"/>
     <script type="text/javascript">
         $(document).ready(function () {
             let queryParameters = GetQueryParameters();
@@ -48,43 +48,46 @@
         function CloseWindow() {
             microsoftTeams.tasks.submitTask(null);
         }
+
     </script>
 </head>
 <body id="themeCSS" class="theme-default">
-    <div id="introDiv" class="surface">
-        <div class="imageDiv">
-            <img src="welcome-dialog.png" alt="Welcome image"/>
-        </div>
-        <div class="textDiv">
-            <p class="bold-header">Make new friends and build community with them</p>
-            <p class="regular-content">
-                Every week, I'll pair you with someone new. If you have the inclination that week, you can meet up--grab a lunch, or a call if you're in different locations. Look out for another message in which I'll pair you with your first match.
-            </p>
-        </div>
-        <div class="footer">
-            <button class="primary-button" onclick="ShowDivOnClick('matchesDiv', 'introDiv')">
-                    Next
-            </button>
-        </div>
+<div id="introDiv" class="surface">
+    <div class="imageDiv">
+        <img src="welcome-dialog.png" alt="Welcome image"/>
     </div>
-    <div id="matchesDiv" class="surface">
-        <div class="imageDiv">
-            <img src="welcome-dialog.png" alt="Welcome image"/>
-        </div>
-        <div class="textDiv">
-            <p class="bold-header">Easily pause matches as needed</p>
-            <p class="regular-content">
-                Pause matches whenever you need. Too busy that week? Out of the office? No problem. Just click the button at anytime.
-            </p>
-        </div>
-        <div class="footer">
-            <button class="primary-button" onclick="CloseWindow()">
-                Sluiten
-            </button>
-            <button class="secondary-button" onclick="ShowDivOnClick('introDiv', 'matchesDiv')">
-              Terug
-            </button>
-        </div>
+    <div class="textDiv">
+        <p class="bold-header">Blijf in contact en leer jouw collega's (nog) beter leren kennen</p>
+        <p class="regular-content">
+            Elke week, match ik je met een andere collega. Wanneer je een match hebt ontvangen, drink een bak koffie,
+            lunch samen of plan een virtuele koffie. Je ontvangt binnenkort je eerste bericht van mij,
+            waarin ik je koppel aan een collega voor ANVA Coffee time.
+        </p>
     </div>
+    <div class="footer">
+        <button class="primary-button" onclick="ShowDivOnClick('matchesDiv', 'introDiv')">
+            Volgende
+        </button>
+    </div>
+</div>
+<div id="matchesDiv" class="surface">
+    <div class="imageDiv">
+        <img src="welcome-dialog.png" alt="Welcome image"/>
+    </div>
+    <div class="textDiv">
+        <p class="bold-header">Pauzeer de matches wanneer je wil</p>
+        <p class="regular-content">
+            Pauzeer de matches wanneer je wil. Te drukke week? Out of office? Geen probleem. Pauzeer op elk moment.
+        </p>
+    </div>
+    <div class="footer">
+        <button class="primary-button" onclick="CloseWindow()">
+            Sluiten
+        </button>
+        <button class="secondary-button" onclick="ShowDivOnClick('introDiv', 'matchesDiv')">
+            Terug
+        </button>
+    </div>
+</div>
 </body>
 </html>
